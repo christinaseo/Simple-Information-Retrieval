@@ -34,6 +34,9 @@ public abstract class DocScore {
 	public String getContent() {
 		return _content;
 	}
+        public void setScore(double input){
+            _score = input;
+        }
 	
 	@Override
 	public String toString() {

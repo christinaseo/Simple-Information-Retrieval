@@ -13,7 +13,7 @@ public class FileFinder {
 	 */
 	public static ArrayList<File> GetAllFiles(String src) {
 		
-		ArrayList<File> ret_files = new ArrayList<File>();
+		ArrayList<File> ret_files = new ArrayList<>();
 		File[] files = new File(src).listFiles();
 
 		for (File f : files) {			

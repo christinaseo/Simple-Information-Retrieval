@@ -12,7 +12,7 @@ public class SimpleTokenizer implements Tokenizer {
 		// Note: can see following page for special characters in Java Regex:
 		//       https://docs.oracle.com/javase/6/docs/api/java/util/regex/Pattern.html
 		
-		ArrayList<String> ret = new ArrayList<String>();
+		ArrayList<String> ret = new ArrayList<>();
 		Pattern p = Pattern.compile("\\w+");
 		Matcher m = p.matcher(s);
 		while (m.find()) {

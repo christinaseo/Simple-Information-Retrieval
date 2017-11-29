@@ -3,6 +3,10 @@ package io;
 public class StaticDocSource extends DocSource {
 	
 	// Statically pre-allocate a number of news headlines as document "content"
+
+    /**
+     *
+     */
 	public static final String[] _documents = {
 			"Qualcomm draws up plans to rebuff Broadcom's $103 billion offer: sources",
 			"SoftBank is buying a chunk of Uber and it's state-of-the-art Taxi-hailing system for $10 billion",
@@ -16,10 +20,12 @@ public class StaticDocSource extends DocSource {
 			"Fight erupts at Indianapolis McDonald's drive-thru over chicken nuggets order"
 	};
 	
+        @Override
 	public int getNumDocs() {
 		return _documents.length;
 	}
 	
+        @Override
 	public String getDoc(int id) {
 		return _documents[id];
 	}
