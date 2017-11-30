@@ -25,7 +25,7 @@ public class IndexingTokenizerTest {
     public void testTokenize() {
         System.out.println("tokenize");
         IndexingTokenizer instance = new IndexingTokenizer();
-        ArrayList<String> expResult = instance.tokenize(new soln.io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(1));
+        ArrayList<String> expResult = instance.soln.tokenize(new soln.io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(1));
         ArrayList<String> result = instance.tokenize(new io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(1));
         assertEquals(expResult, result);
     }
@@ -34,7 +34,7 @@ public class IndexingTokenizerTest {
     public void testTokenizeNotEquals() {
         System.out.println("tokenize");
         IndexingTokenizer instance = new IndexingTokenizer();
-        ArrayList<String> expResult = instance.tokenize(new soln.io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(1));
+        ArrayList<String> expResult = instance.soln.tokenize(new soln.io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(1));
         ArrayList<String> result = instance.tokenize(new io.FileDocSource("Extracted NSF/Part1/awards_1990/awd_1990_00").getDoc(3));
         assertNotEquals(expResult, result);
     }
