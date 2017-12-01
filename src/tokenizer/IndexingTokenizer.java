@@ -19,7 +19,7 @@ public class IndexingTokenizer implements Tokenizer {
     public ArrayList<String> tokenize(String s) {
         //need to change so it lowercases all takoens an dpreserves hyphenated words as single words
         	ArrayList<String> ret = new ArrayList<>();
-		Pattern p = Pattern.compile("[\\w-]+");
+		Pattern p = Pattern.compile("\\w[\\w-]*");
 		Matcher m = p.matcher(s);
 		while (m.find()) {
 	            ret.add(m.group().toLowerCase());
