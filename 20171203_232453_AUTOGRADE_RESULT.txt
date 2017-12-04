@@ -1,0 +1,12 @@
+FailedTestCases:
+test14: Integration Test (FileDocSource, IndexingTokenizer, TFIDFScoringFun) Timing Matters with single word query
+This single test 14 took too long to run
+test15: Integration Test (FileDocSource, IndexingTokenizer, TFIDFScoringFun) Timing Matters with common stop words query
+This single test 15 took too long to run
+test16: Integration Test (FileDocSource, IndexingTokenizer, TFIDFScoringFun) Timing Matters with > 1 word query'
+This single test 16 took too long to run
+
+
+Your grade for this assignment: 6.5 out of 8.0
+If you think there is a grading mistake,
+Please consult the TA during office hours.
